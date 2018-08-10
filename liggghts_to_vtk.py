@@ -1,25 +1,20 @@
 import argparse
 import os
+import itertools
+import threading
 
-parser = argparse.ArgumentParser()
+class myThread (threading.Thread):
+   def __init__(self, threadID, file, s):
+      threading.Thread.__init__(self)
+      self.threadID = threadID
+      self.file = file
+      self.s = s
+   def run(self):
+      process(self.file, self.s)
 
-parser.add_argument('file_pattern', type=str,
-                    help='The pattern for the dump files (e.g. "dump_*.liggghts")')
-
-args = parser.parse_args()
-
-files = os.listdir('.')
-sim_files = []
-for file in files:
-    s = args.file_pattern.split('*')
-    if file.startswith(s[0]) and file.endswith(s[1]):
-        sim_files.append(file)
-
-for file in sim_files:
+def process(file, s):
     with open(file, 'r') as f:
-        file_list = []
         sub_file_lines = []
-        s = args.file_pattern.split('*')
         file_timestep = int(file[len(s[0]):-len(s[1])])
         lines = f.readlines()
 
@@ -88,3 +83,39 @@ for file in sim_files:
         outfile = open(s[0] + str(file_timestep).zfill(4) + '.vtk', 'w')
         outfile.writelines(sub_file_lines)
         outfile.close()
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument('file_pattern', type=str,
+                        help='The pattern for the dump files (e.g. "dump_*.liggghts")')
+
+    args = parser.parse_args()
+
+    files = os.listdir('.')
+    sim_files = []
+    for file in files:
+        s = args.file_pattern.split('*')
+        if file.startswith(s[0]) and file.endswith(s[1]):
+            sim_files.append(file)
+
+    x = itertools.count()
+    p = []
+    for file in sim_files:
+        p.append(myThread(next(x), file, s))
+
+    step=24
+    for i in range(step, len(sim_files), step):
+        print('Reading [' + str(i-step) + ':' + str(i-1) + '] of ' + str(len(sim_files)))
+        for j in range(i-step, i):
+            p[j].start()
+        for proc in p[i-step:i]:
+            p[j].join()
+        while not threading.activeCount() <= 2:
+            pass
+
+    print('Reading [' + str(len(p) - (len(p)%step)) + ':' + str(len(p)) + '] of ' + str(len(p)))
+    for proc in p[len(p) - (len(p)%step):len(p)+1]:
+        proc.start()
+    for proc in p[len(p) - (len(p)%step):len(p)+1]:
+        proc.join()
