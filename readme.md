@@ -10,6 +10,7 @@ Example python "C:\Users\wchen\Desktop\Python Scripts\splitter.py" mill_*.ligggh
 2. Run splitter.py if different particles are desired in blender
 
 3. Run rename_dump.py (only supports files generated from splitter.py currently)
+
   3.1. If not splitting, change line three from ('1_', '2_', '3_') to ('mesh_')
 
 4. Verify that a file named 'dump_test' has been created.
