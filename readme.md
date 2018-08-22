@@ -57,8 +57,7 @@ The above example will split all occurrences of files with the pattern mill_\*.l
     <p align="center"><img align="middle" src="https://github.com/mwmuni/LIGGGHTS-Post-Processing-Utilities/blob/master/images/Blender_5.png"></p>
     2. In Sampling, change the preset to 'Preview' and check 'Square Samples'
     <p align="center"><img align="middle" src="https://github.com/mwmuni/LIGGGHTS-Post-Processing-Utilities/blob/master/images/Blender_6.png"></p>
-    3. In Light Paths, change the preset to Limited Global Illumination
-        * Turn back on Reflective and Refractive Caustics
+    3. In Light Paths, change the preset to Limited Global Illumination then turn back on Reflective and Refractive Caustics
     <p align="center"><img align="middle" src="https://github.com/mwmuni/LIGGGHTS-Post-Processing-Utilities/blob/master/images/Blender_7.png"></p>
     4. In Performance, change the tile size to (X: 960, Y: 540)
         * If rendering at 100% use (X: 1920, Y: 1080)
