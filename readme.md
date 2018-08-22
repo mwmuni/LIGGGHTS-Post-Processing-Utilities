@@ -68,4 +68,4 @@ The above example will split all occurrences of files with the pattern mill_\*.l
 14. Navigate to the output directory (default is C:/tmp/) and run to_vid.py after moving 'openh264-1.6.0-win64msvc.dll' to the output directory
     * Select the lossless method
 
-15. Compress the output video for emailing
+15. Compress the output video using FFMPEG for emailing
