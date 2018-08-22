@@ -31,6 +31,8 @@ The above example will split all occurrences of files with the pattern mill_\*.l
 
 7. Change the render type to Cycles (Blender Render > Cycles Render)
 
+<p align="center"><img align="middle" src="https://github.com/mwmuni/LIGGGHTS-Post-Processing-Utilities/blob/master/images/Blender_2.png"></p>
+
 8. Press Num 0, then press Shift+F. Move the camera using WASD + Mouse, right click to accept new position
 
 9. Delete the global light and create a plane, placing it behind the camera
