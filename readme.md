@@ -54,12 +54,16 @@ The above example will split all occurrences of files with the pattern mill_\*.l
 
 12. Adjust the Scene settings for rendering
     1. In Render, change the Device from CPU to GPU
-    2. In Sampling, change the preset to 'Preview' and check 'Square Samples' 
+    <p align="center"><img align="middle" src="https://github.com/mwmuni/LIGGGHTS-Post-Processing-Utilities/blob/master/images/Blender_5.png"></p>
+    2. In Sampling, change the preset to 'Preview' and check 'Square Samples'
+    <p align="center"><img align="middle" src="https://github.com/mwmuni/LIGGGHTS-Post-Processing-Utilities/blob/master/images/Blender_6.png"></p>
     3. In Light Paths, change the preset to Limited Global Illumination
         * Turn back on Reflective and Refractive Caustics
+    <p align="center"><img align="middle" src="https://github.com/mwmuni/LIGGGHTS-Post-Processing-Utilities/blob/master/images/Blender_7.png"></p>
     4. In Performance, change the tile size to (X: 960, Y: 540)
         * If rendering at 100% use (X: 1920, Y: 1080)
         * DO NOT use progressive refine, this will slow down render time
+    <p align="center"><img align="middle" src="https://github.com/mwmuni/LIGGGHTS-Post-Processing-Utilities/blob/master/images/Blender_8.png"></p>
     5. In Dimensions, change the end frame to the number of files you want to render
         * you can change the start frame to skip ahead as well
 
