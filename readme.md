@@ -10,11 +10,11 @@ Example python "C:\Users\wchen\Desktop\Python Scripts\splitter.py" mill_\*.liggg
 2. Run splitter.py if different particles are desired in blender
 
 3. Run rename_dump.py (only supports files generated from splitter.py currently)
-  * If not splitting, change line three from ('1_', '2_', '3_') to ('mesh_')
+    * If not splitting, change line three from ('1_', '2_', '3_') to ('mesh_')
 
-4. Verify that a file named 'dump_test' has been created.
-  * The particle files must be separated by one value and zero-padded
-    * e.g. 1_0000.liggghts, 1_0001.liggghts
+markup: 4. Verify that a file named 'dump_test' has been created.
+          * The particle files must be separated by one value and zero-padded
+            * e.g. 1_0000.liggghts, 1_0001.liggghts
 
 5. Navigate to 'dump_test' and run liggghts_to_vtk.py for each particle type
   * e.g. python "C:\Users\wchen\Desktop\Python Scripts\liggghts_to_vtk.py" 1_\*.liggghts
