@@ -2,7 +2,7 @@ Use the python scripts in the root directory of this repository.
 
 Example usage of python script:
 ```
-> C:\path\to\python\scripts\splitter.py mill_*.liggghts 3
+> python C:\path\to\python\scripts\splitter.py mill_*.liggghts 3
 ```
 The above example will split all occurrences of files with the pattern mill_\*.liggghts into three separate particle files.
 
