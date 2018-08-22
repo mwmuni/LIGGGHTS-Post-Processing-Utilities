@@ -1,2 +1,3 @@
-test\n
+test
+
 `block test`
