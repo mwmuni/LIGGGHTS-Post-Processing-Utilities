@@ -1,6 +1,6 @@
 Use the python scripts in "C:\Users\wchen\Desktop\Python Scripts"
 
-Example python "C:\Users\wchen\Desktop\Python Scripts\splitter.py" mill_*.liggghts 3
+Example python "C:\Users\wchen\Desktop\Python Scripts\splitter.py" mill_\*.liggghts 3
 	
 	(The above example will split all occurrences of files with the pattern
 	 mill_*.liggghts into three separate particle files)
@@ -17,7 +17,7 @@ Example python "C:\Users\wchen\Desktop\Python Scripts\splitter.py" mill_*.ligggh
     * e.g. 1_0000.liggghts, 1_0001.liggghts
 
 5. Navigate to 'dump_test' and run liggghts_to_vtk.py for each particle type
-  * e.g. python "C:\Users\wchen\Desktop\Python Scripts\liggghts_to_vtk.py" 1_*.liggghts
+  * e.g. python "C:\Users\wchen\Desktop\Python Scripts\liggghts_to_vtk.py" 1_\*.liggghts
   * liggghts_to_vtk.py has not been tested since the last update, please report any bugs
 
 6. Open Blender load the simulation files:
