@@ -1,9 +1,10 @@
-Use the python scripts in "C:\Users\wchen\Desktop\Python Scripts"
+Use the python scripts in the root directory of this repository.
 
-Example python "C:\Users\wchen\Desktop\Python Scripts\splitter.py" mill_\*.liggghts 3
-	
-	(The above example will split all occurrences of files with the pattern
-	 mill_*.liggghts into three separate particle files)
+Example usage of python script:
+```
+C:\Users\<USERNAME>\Desktop\Python Scripts\splitter.py mill_\*.liggghts 3
+```
+The above example will split all occurrences of files with the pattern mill_\*.liggghts into three separate particle files.
 
 1. Run a LIGGGHTS simulation and navigate to the post directory
 
