@@ -37,7 +37,7 @@ The above example will split all occurrences of files with the pattern mill_\*.l
 
 9. Delete the global light and create a plane, placing it behind the camera
 
-<p align="center"><img align="middle" src="https://github.com/mwmuni/LIGGGHTS-Post-Processing-Utilities/blob/master/images/Blender_3.png"></p>
+<p align="center"><img align="middle" width=300 height=300 src="https://github.com/mwmuni/LIGGGHTS-Post-Processing-Utilities/blob/master/images/Blender_3.png"></p>
 
 10. Create new shapes for particles (I use UV Sphere for particles, and Metaballs for water)
     1. Drag the newly created object to the desired VTK object, making the new object a child of the VTK object
