@@ -48,7 +48,7 @@ The above example will split all occurrences of files with the pattern mill_\*.l
         * Diffuse for walls and non-transparent particles
         * Transparent for walls you want to see through
         * Glass with a very slightly blue colour for water
-    2. Add a Emitter type mesh to the plane you placed behind the camera, this will be your light
+    2. Add an Emission type mesh to the plane you placed behind the camera, this will be your light
 
 <p align="center"><img align="middle" src="https://github.com/mwmuni/LIGGGHTS-Post-Processing-Utilities/blob/master/images/Blender_4.png"></p>
 
