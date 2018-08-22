@@ -27,6 +27,7 @@ The above example will split all occurrences of files with the pattern mill_\*.l
         2. Repeat for every particle type
         
 ![blender shift+a](https://github.com/mwmuni/LIGGGHTS-Post-Processing-Utilities/blob/master/images/Blender_1.png)
+
     2. Load the STL files
         * I recommend avoiding animated STL files for the time being
 
