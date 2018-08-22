@@ -37,6 +37,8 @@ The above example will split all occurrences of files with the pattern mill_\*.l
 
 9. Delete the global light and create a plane, placing it behind the camera
 
+<p align="center"><img align="middle" src="https://github.com/mwmuni/LIGGGHTS-Post-Processing-Utilities/blob/master/images/Blender_3.png"></p>
+
 10. Create new shapes for particles (I use UV Sphere for particles, and Metaballs for water)
     1. Drag the newly created object to the desired VTK object, making the new object a child of the VTK object
     2. Select the VTK object and, in the object settings, change the duplication option to 'vertices'
@@ -47,6 +49,8 @@ The above example will split all occurrences of files with the pattern mill_\*.l
         * Transparent for walls you want to see through
         * Glass with a very slightly blue colour for water
     2. Add a Emitter type mesh to the plane you placed behind the camera, this will be your light
+
+<p align="center"><img align="middle" src="https://github.com/mwmuni/LIGGGHTS-Post-Processing-Utilities/blob/master/images/Blender_4.png"></p>
 
 12. Adjust the Scene settings for rendering
     1. In Render, change the Device from CPU to GPU
