@@ -6,6 +6,8 @@ Example usage of python script:
 ```
 The above example will split all occurrences of files with the pattern mill_\*.liggghts into three separate particle files.
 
+*NOTE:* Importing simulations to Blender requires the [DualSPH Blender addon](https://github.com/EPhysLab-UVigo/VisualSPHysics/tree/master/blendermodule) 
+
 1. Run a LIGGGHTS simulation and navigate to the post directory
 
 2. Run splitter.py if different particles are desired in blender
